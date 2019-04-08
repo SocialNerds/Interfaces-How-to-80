@@ -1,0 +1,6 @@
+{
+    "name": "thanosnokas/interfaces",
+    "require": {
+        "symfony/dependency-injection": "^4.2"
+    }
+}
