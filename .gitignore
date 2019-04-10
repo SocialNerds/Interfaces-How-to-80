@@ -1,2 +1,3 @@
 .env
-data/vendor
+data/autoloading_example/vendor
+.DS_Store

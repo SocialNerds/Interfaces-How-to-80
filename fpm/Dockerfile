@@ -18,9 +18,9 @@ RUN apt-get update && \
 
 # Install composer.
 RUN cd ~ && \
-    curl -sS https://getcomposer.org/installer -o composer-setup.php && \
-    php composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
-    rm -rf composer-setup.php
+  curl -sS https://getcomposer.org/installer -o composer-setup.php && \
+  php composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
+  rm -rf composer-setup.php
 USER serveruser
 WORKDIR /home/serveruser
 RUN echo "PATH=$PATH:~/.composer/vendor/bin" >> ~/.bashrc
@@ -28,8 +28,8 @@ RUN echo "PATH=$PATH:~/.composer/vendor/bin" >> ~/.bashrc
 # Install phpunit.
 USER root
 RUN wget https://phar.phpunit.de/phpunit.phar && \
-    chmod +x phpunit.phar && \
-    mv phpunit.phar /usr/local/bin/phpunit
+  chmod +x phpunit.phar && \
+  mv phpunit.phar /usr/local/bin/phpunit
 
 WORKDIR /home/serveruser/data
 

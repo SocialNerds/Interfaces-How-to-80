@@ -1,9 +1,10 @@
 # What are Interfaces?
 
-An example of interfaces in PHP.
+An example of interfaces in PHP. And pretty much every other language that supports
+interfaces.
 
 # Check the full explanation video (GR)
-[![Interfaces, τι Είναι, Γιατί τα Θέλουμε #80, live](https://img.youtube.com/vi/u_8z2tuPMZ0/0.jpg)](https://youtu.be/u_8z2tuPMZ0)
+[![Interfaces, Γιατί τα Θέλουμε #80, live](https://img.youtube.com/vi/N3orWXm-12Q/0.jpg)](https://youtu.be/N3orWXm-12Q)
 
 # Installation
 Requirements
@@ -17,12 +18,11 @@ docker-compose build && docker-compose up -d
 
 Login to the container,
 ~~~~
-docker exec -it app_fpm /bin/bash -c "TERM=$TERM exec bash"
+docker exec -it -u serveruser app_fpm /bin/bash -c "TERM=$TERM exec bash"
 ~~~~
 
 To check it works,
 ~~~~
-composer install
 php hello.php
 ~~~~
 

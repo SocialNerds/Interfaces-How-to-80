@@ -1,0 +1,11 @@
+{
+    "name": "socialnerds/messaging",
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Messenger\\": "messenger/",
+            "Logger\\": "logger/"
+        }
+    }
+}
